@@ -84,11 +84,11 @@ Instalamos cde con la orden ``sudo apt-get install cde``
 
 Una vez instalado debemos empaquetar el script que hemos realizado. Para ellos ejecutamos la siguiente orden: ``cde python ejercicio3.py``. Al hacer esto, nos genera el archivo cde.options y el directorio cde-package. 
 
-![Imagen 1](http://s1380.photobucket.com/user/sergiocaceres/media/ejercicio3.2-1_zps4digarn1.png.html?sort=3&o=1)
+![Imagen 1](https://github.com/sergiocaceres/IV-Ejercicios/blob/master/Ejercicios/Capturas/ejercicio3.2-1.png)
 
 Nos situamos en la directorio donde se encuentra el fichero y probamos la ejecución 
 
-![Imagen 2](http://s1380.photobucket.com/user/sergiocaceres/media/ejercicio3.2-2_zpsoipr7w3n.png.html?sort=3&o=0)
+![Imagen 2](https://github.com/sergiocaceres/IV-Ejercicios/blob/master/Ejercicios/Capturas/ejercicio3.2-2.png)
 
 
 ###Ejercicio 4
@@ -99,7 +99,7 @@ Para saber el procesador que tenemos basta con hacer un ``cat /proc/cpuinfo``. E
 
 Ejecutamos la orden egrep ``'^flags.*(vmx|svm)' /proc/cpuinfo``
 
-![Imagen 3](http://s1380.photobucket.com/user/sergiocaceres/media/ejercicio4_zpsm93vcnkc.png.html?o=0)
+![Imagen 3](https://github.com/sergiocaceres/IV-Ejercicios/blob/master/Ejercicios/Capturas/ejercicio4.png)
 
 No devuelve nada, por lo que el procesador no tiene dicha funcionalidad o, en todo caso, desactivada
 

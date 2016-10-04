@@ -111,6 +111,7 @@ No devuelve nada, por lo que el procesador no tiene dicha funcionalidad o, en to
 Al usar la orden nos pide que instalemos el paquete cpu-checker. Lo instalamos con la orden ``sudo apt-get install cpu-checker``. Una vez instalado el paquete, podremos usarlo sin problema.
 Ejecutamos la orden ``kvm-ok`` y nos muestra lo siguiente:
 
+
 ```
 INFO: Your CPU does not support KVM extensions
 KVM acceleration can NOT be used

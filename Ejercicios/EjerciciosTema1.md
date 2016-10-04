@@ -19,7 +19,7 @@ Otra forma de hacerlo sería la siguiente
 
 Para amortizarlo en un plazo de 4 años debemos amortizar cada año un 25% ya que es el máximo autorizado. Por tanto haríamos lo siguiente
 
-``536,41 * 0,25 = 134,10€ cada año``
+``536,41 * 0,25 = 134,10€ cada año`` 
 
 ####Amortización a 7 años
 

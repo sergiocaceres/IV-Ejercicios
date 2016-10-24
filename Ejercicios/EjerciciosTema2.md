@@ -79,5 +79,4 @@ script:
 Automaticamente Travis sincroniza el repositorio y comprueba si todo es correcto:
 
 [![Build Status](https://travis-ci.org/sergiocaceres/Ejercicio_Empresa_IV.svg?branch=master)](https://travis-ci.org/sergiocaceres/Ejercicio_Empresa_IV)
-
 ![Imagen 6](http://i63.tinypic.com/311lvlh.png)

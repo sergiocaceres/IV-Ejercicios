@@ -50,6 +50,27 @@ Al haber usado python necesitamos tener el setup.py, que es el equivalente. Usam
 
 Para generar la documentación en python podemos usar [epydoc](http://epydoc.sourceforge.net/). Bastaría con hacer ``` epydoc nombre_paquete ```. Se nos creará un directorio html, en el que se encuentra la documentación generada automáticamente
 
+###Ejercicio 6
+**Para la aplicación que se está haciendo, escribir una serie de aserciones y probar que efectivamente no fallan. Añadir tests para una nueva funcionalidad, probar que falla y escribir el código para que no lo haga (vamos, lo que viene siendo TDD).**
+
+En el fichero tests.py crearemos nuestros tests. Introduciremos una nueva empresa y así poder ver que funciona de forma correcta
+
+![Imagen 6](http://i68.tinypic.com/2m81pqr.png)
+
+Ejecutamos ```python manage.py test empresa``` y vemos el resultado
+
+![Imagen 6.1](http://i64.tinypic.com/wui4ht.png)
+
+A continuación crearemos un test para que nos devuelva un fallo y así poder ver que funciona de forma correcta. El código es el siguiente:
+
+![Imagen 6.2](http://i66.tinypic.com/11aj2tg.png)
+
+Volvemos a ejecutar ```python manage.py test empresa``` y vemos el resultado
+
+![Imagen 6.3](http://i64.tinypic.com/10ho8s9.png)
+
+ Como podemos ver, el resultado es el correcto ya que nos da un error diciendo que no son iguales
+
 ###Ejercicio 7
 
 **Convertir los tests unitarios anteriores con assert a programas de test y ejecutarlos desde mocha, usando descripciones del test y del grupo de test de forma correcta. Si hasta ahora no has subido el código que has venido realizando a GitHub, es el momento de hacerlo, porque lo vas a necesitar un poco más adelante.**

@@ -101,7 +101,7 @@ Lo podemos ver en la siguiente imagen
 ###Ejercicio 3
 **Realizar una app en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.**
 
-Este ejercicio lo he hecho con una aplicación de Python, con el framework Flask. En el uso variables para guardar usuarios mediante la ruta que nos inserta el usuario. Podemos ver el código como sería:
+Este ejercicio lo he hecho con una aplicación de Python, con el framework Flask. En él uso variables para guardar usuarios mediante la ruta que nos inserta el usuario. Podemos ver el código como sería:
 
 ```
 from wtforms import *

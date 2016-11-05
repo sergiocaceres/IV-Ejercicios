@@ -25,7 +25,7 @@ Ya podremos acceder a la interfaz de Heroku
 
 Hemos creado la aplicación en Heroku y dentro instalaremos Wordpress. Los pasos son los siguientes:
 
-Instalamos heroku: 
+Descargamos el cinturón de herramientas de heroku: 
 ```
 sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 ```
@@ -97,6 +97,18 @@ http://ejercicioiv.herokuapp.com/
 Lo podemos ver en la siguiente imagen
 
 ![Imagen 12](http://i66.tinypic.com/2iw1uno.png)
+
+
+Simpemente añadir que para abrir nuestra aplicación podremos hacer lo siguiente:
+
+```
+heroku ps:scale web=1
+heroku open
+```
+
+Podremos cambiar comentarios, títulos, instalar plugins,...
+
+![Imagen 16](http://i64.tinypic.com/2lxv5s6.png)
 
 ###Ejercicio 3
 **Realizar una app en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.**
@@ -200,3 +212,85 @@ Vemos la salida de ejecutar el test:
 
 ###Ejercicio 5
 **Instalar y echar a andar tu primera aplicación en Heroku.**
+
+Una vez que estamos registrados y nos hemos instalado el Toolbelt (ya lo hice en el Ejercicio 2), hacemos login y clonamos la app de prueba. Lo hacemos con las siguientes ordenes
+
+```
+heroku login
+git clone https://github.com/heroku/node-js-getting-started.git
+```
+![Imagen 17](http://i67.tinypic.com/2uh4w90.png)
+
+Nos creamos una nueva app:
+
+![Imagen 18](http://i67.tinypic.com/33c7ih4.png)
+
+Necesitamos instalar las dependencias express y ejs.
+```
+npm install ejs
+npm install -g express
+```
+
+Si luego al lanzar la aplicación nos diera error, debemos hacer lo siguiente:
+```
+rm -fr node_modules
+npm i
+git add -f node_modules
+git commit -m "Fix node_modules dependencies"
+git push heroku master
+```
+
+Finalmente ya no nos debería dar problemas y podríamos lanzar nuestra primera aplicación:
+
+![Imagen 19](http://i66.tinypic.com/1z6fkeo.png)
+
+Podremos comprobar que está funcionando correctamente
+
+![Imagen 20](http://i64.tinypic.com/9tlv6f.png)
+
+
+###Ejercicio 6
+**Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.**
+
+Antes que nada probamos nuestra aplicación con la orden
+```
+python iv.py
+```
+
+Modificamos dos archivos. El primero es el Procfile, dejándolo de esta manera:
+```
+web: python iv.py
+```
+
+El segundo archivo es el requirements:
+```Flask==0.9
+Werkzeug==0.8.3
+Jinja2==2.6
+distribute==0.6.31
+wsgiref==0.1.2
+```
+
+Una vez que tenemos estos dos archivos bien configurados podremos probar nuestra aplicación con foreman
+
+Sería de la siguiente manera
+```
+foreman start
+```
+
+![Imagen 21](http://i66.tinypic.com/33to0f8.png)
+
+Vemos que funciona correctamente
+
+![Imagen 22](http://i67.tinypic.com/2en2hrq.png)
+
+Ahora vamos a desplegarlo en Heroku
+
+```
+git init
+git add .
+git commit -m "init"
+heroku create
+git push heroku master
+```
+
+Una vez hechos estos comandos, nos devuelve la url donde está nuestra aplicación. La ponemos en el navegador y listo.

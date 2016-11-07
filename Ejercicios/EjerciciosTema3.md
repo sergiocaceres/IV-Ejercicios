@@ -294,3 +294,11 @@ git push heroku master
 ```
 
 Una vez hechos estos comandos, nos devuelve la url donde está nuestra aplicación. La ponemos en el navegador y listo.
+
+
+###Ejercicio 7
+**Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow**
+
+En el ejercicio anterior ya hemos visto como configurar el despliegue automático, por lo que para este ejercicio lo único que tendremos que hacer es configurar que espere a que la aplicación haya pasado los test. Para esto simplemente seleccionamos la casilla siguiente:
+
+![Imagen 23](http://i68.tinypic.com/2m4ocab.png)

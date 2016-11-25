@@ -96,10 +96,6 @@ Simplemente seleccionamos el contenedor al que queremos restringir los recursos 
 
 ![Imagen 5](http://i66.tinypic.com/2hg4e93.png)
 
-###Ejercicio 5
-**Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**
-
-
 
 ###Ejercicio 6
 **Instalar docker.**
@@ -226,16 +222,18 @@ docker build -t prueba .
 ```
 ![Imagen 14](http://i67.tinypic.com/35cn138.png)
 
+El "." es para que se cree en el directorio actual. 
+
 Comprobamos que se ha creado:
 
 ![Imagen 15](http://i66.tinypic.com/347u0kl.png)
 
-El "." es para que se cree en el directorio actual. Probamos su funcionamiento. Primero debemos conectarnos a la imagen creada con la orden ```sudo docker run -i -t prueba /bin/bash ```. Una vez hecho esto, ya solo queda lanzar la aplicación:
+Probamos su funcionamiento. Primero debemos conectarnos a la imagen creada con la orden ```sudo docker run -i -t prueba /bin/bash ```. Una vez hecho esto, ya solo queda lanzar la aplicación:
 
 ```
 cd IV && make execute
 ```
 
-Cuando todo esté listo, debemos saber la ipde la imagen para después introducirla en nuestro navegador y ver que funciona correctamente:
+Cuando todo esté listo, debemos saber la ip de la imagen para después introducirla en nuestro navegador y ver que funciona correctamente:
 
 ![Imagen 16](http://i63.tinypic.com/4lsj9v.png)
